@@ -1,0 +1,336 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../assests/authBg.svg);  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+}
+
+@media (max-width: 1200px) {
+    .container {
+        background-size: contain; 
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        background-position: top center; 
+        background-size: contain; 
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        background-size: contain;  
+        background-position: center center;
+    }
+}
+
+  
+  .recorder .audio-recorder {
+    padding: 10px;
+    width: 300px;
+    height: 80vh;
+    border-radius: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .voice-list .audio-recorder {
+    padding: 10px;
+    min-width: 300px;
+    height: 80vh;
+    border-radius: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .button-group svg {
+    cursor: pointer;
+  }
+  
+  .upload-button {
+    width: 100%;
+    height: 40px;
+    border: 0;
+    background: #115dfc;
+    border-radius: 7px;
+    outline: none;
+    color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .upload-button:disabled {
+    background-color: #eee;
+    cursor: not-allowed;
+    color: #212121;
+  }
+  
+  .dummy-static-wave {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    gap: 2px;
+  }
+  
+  .bar {
+    width: 4px;
+    height: 5px;
+    background-color: #00c4ff;
+  }
+  
+  .voice-list {
+    width: 50%;
+  }
+  
+  .audio-player {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 8px;
+  }
+  
+  .auth-heading {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+  }
+  
+  .auth-input {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  .auth-button {
+    padding: 12px;
+    width: 100%;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .auth-button:hover {
+    background: #0056b3;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .audio-parallel {
+    color: white;
+    background: rgb(14, 42, 72, 0.55);
+    background: linear-gradient(180deg, rgba(14, 42, 72, 0.55) 0%, rgba(0, 69, 158, 0.55) 100%);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 30px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .time-title {
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+  }
+  
+  .audio-parallel-list {
+    color: white;
+    background: rgb(14, 42, 72, 0.55);
+    background: linear-gradient(180deg, rgba(14, 42, 72, 0.55) 0%, rgba(0, 69, 158, 0.55) 100%);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px 30px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .recorder-section {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .record-status {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 10px;
+  }
+  
+  .visualizer-section {
+    margin: 20px 0;
+    border-radius: 8px;
+  }
+  
+  canvas {
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+  }
+  
+  .playback-section {
+    margin-top: 20px;
+  }
+  
+  .bars-container {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .voice-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    gap: 5rem;
+  }
+  
+  .audio-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    height: auto;
+    max-height: 500px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    margin-bottom: 10px;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .container {
+      background-size: contain;
+      background-position: center;
+      height: auto;
+    }
+  
+    .recorder .audio-recorder, .voice-list .audio-recorder {
+      width: 90%;
+      height: auto;
+      border-radius: 15px;
+    }
+  
+    .voice-list {
+      width: 100%;
+    }
+  
+    .upload-button {
+      height: 35px;
+    }
+  
+    .auth-heading {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+  
+    .auth-input {
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    .auth-button {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .audio-parallel, .audio-parallel-list {
+      padding: 30px 20px;
+    }
+  
+    .time-title {
+      font-size: 30px;
+    }
+  
+    .bars-container {
+      height: 60px;
+    }
+  
+    .voice-container {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+  
+  /* Further mobile responsiveness for small devices */
+  @media (max-width: 480px) {
+    .recorder .audio-recorder, .voice-list .audio-recorder {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+    }
+  
+    .audio-parallel, .audio-parallel-list {
+      padding: 20px 10px;
+    }
+  
+    .time-title {
+      font-size: 26px;
+    }
+  
+    .auth-input {
+      padding: 8px;
+      font-size: 14px;
+    }
+  
+    .auth-button {
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    .bars-container {
+      height: 50px;
+    }
+  
+    .voice-container {
+      gap: 1.5rem;
+    }
+  }
+  

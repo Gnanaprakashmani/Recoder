@@ -6,6 +6,7 @@ import MicRecorder from "mic-recorder-to-mp3";
 import { ReactComponent as PlayIcon } from "../assests/play.svg";
 import { ReactComponent as PauseIcon } from "../assests/pause.svg";
 import { ReactComponent as MicIcon } from "../assests/micIcon.svg";
+import"../component/voiceRecorder.css";
 function VoiceRecorder({ setAudios }) {
   const [isStart, setIsStart] = useState(false);
   const [time, setTime] = useState(0);
